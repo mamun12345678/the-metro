@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
+import { API_URL } from "../../../config";
 
 const AddReview = () => {
   const { register, handleSubmit, reset } = useForm();
@@ -10,7 +11,7 @@ const AddReview = () => {
     data.name = user?.displayName;
     data.img = user.photoURL ? user.photoURL : " ";
 
-    fetch("http://localhost:5000/Reviews", {
+    fetch(`${API_URL}/Reviews`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -14,6 +14,7 @@ import {
   sendEmailVerification,
   sendPasswordResetEmail,
 } from "firebase/auth";
+import { API_URL } from "../../config";
 
 // initialize firebase app
 initializeFirebase();
@@ -132,7 +133,7 @@ const useFirebase = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:5000/users/${user.email}`)
+      fetch(`${API_URL}/users/${user.email}`)
         .then((res) => res.json())
         .then((data) => setAdmin(data.admin));
     }
@@ -148,7 +149,7 @@ const useFirebase = () => {
 
   const saveUser = (email, displayName, method) => {
     const user = { email, displayName };
-    fetch("http://localhost:5000/users", {
+    fetch(`${API_URL}/users`, {
       method: method,
       headers: {
         "content-type": "application/json",

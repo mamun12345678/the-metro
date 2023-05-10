@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Rating } from "@mui/material";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import { API_URL } from "../../../../config";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -14,7 +15,7 @@ const Home = () => {
   const { handleSubmit, register, reset } = useForm();
 
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/Orders", data).then((res) => {
+    axios.post(`${API_URL}/Orders`, data).then((res) => {
       if (res.data.insertedId) {
         alert("Booked SuccessFully");
       } else {
@@ -25,7 +26,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch(`${API_URL}/reviews`)
       .then((res) => res.json())
       .then((data) => {
         setReviews(data);
@@ -34,7 +35,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:5000/Events")
+    fetch(`${API_URL}/Events`)
       .then((res) => res.json())
       .then((data) => {
         setEvents(data);
