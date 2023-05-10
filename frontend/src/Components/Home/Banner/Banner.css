@@ -1,0 +1,21 @@
+.title {
+    font-size: 70px;
+    font-family: 'Josefin Slab', serif;
+}
+
+.iframe{
+width: 500px;
+height: 280px;
+}
+
+
+@media screen and (min-width: 340px) and (max-width: 480px) { 
+    .iframe{
+        width: 330px;
+        height: 190px;
+    }
+
+    .title {
+        font-size: 45px;
+    }
+}

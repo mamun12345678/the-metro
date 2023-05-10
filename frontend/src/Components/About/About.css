@@ -1,0 +1,54 @@
+.about-container {
+    letter-spacing: 1px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-text {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    color: #002147;
+    margin-bottom: 1rem;
+  }
+  
+  .about-info,
+  .about-location {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-info h3,
+  .about-location h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .about-text,
+    .about-info,
+    .about-location {
+      margin-top: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .about-title {
+      font-size: 1.5rem;
+    }
+  
+    .about-info h3,
+    .about-location h3 {
+      font-size: 1.25rem;
+    }
+  }
+  

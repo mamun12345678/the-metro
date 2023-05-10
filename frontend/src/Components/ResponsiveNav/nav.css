@@ -1,0 +1,15 @@
+.link {
+  font-weight: bold;
+  padding: 8px 15px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  color: black;
+  background-color: white;
+}
+.link:hover{
+  background-color: #404DB6;
+  color: white;
+}
+.navbar-toggler-icon {
+  filter: invert(1);
+}

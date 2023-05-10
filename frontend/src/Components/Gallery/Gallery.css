@@ -1,0 +1,46 @@
+.gallery-container {
+    font-family: 'monospace';
+}
+
+.gallery-title {
+    color: #002147;
+    font-weight: bold;
+}
+
+.double-hr {
+    margin-top: -8px;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-container:hover .gallery-img {
+    transform: scale(1.1);
+}
+
+.img-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-container:hover .img-label {
+    opacity: 1;
+}
