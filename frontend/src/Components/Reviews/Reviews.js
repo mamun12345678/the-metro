@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import AddReview from "./AddReview";
 import { Rating } from "@mui/material";
 import useAuth from "../../hooks/useAuth";
-import { API_URL } from "../../../config";
+import { API_URL } from "../../config";
 
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);

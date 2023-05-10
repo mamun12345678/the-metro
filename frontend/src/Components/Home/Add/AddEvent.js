@@ -1,7 +1,7 @@
 import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
-import { API_URL } from "../../../../config";
+import { API_URL } from "../../../config";
 
 const AddEvent = () => {
   const { register, handleSubmit, reset } = useForm();

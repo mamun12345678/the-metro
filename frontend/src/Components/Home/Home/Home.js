@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { Rating } from "@mui/material";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import { API_URL } from "../../../../config";
+import { API_URL } from "../../../config";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);

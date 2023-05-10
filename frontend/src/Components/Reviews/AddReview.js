@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
-import { API_URL } from "../../../config";
+import { API_URL } from "../../config";
 
 const AddReview = () => {
   const { register, handleSubmit, reset } = useForm();

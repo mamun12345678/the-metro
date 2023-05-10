@@ -14,7 +14,7 @@ import {
   sendEmailVerification,
   sendPasswordResetEmail,
 } from "firebase/auth";
-import { API_URL } from "../../config";
+import { API_URL } from "../config";
 
 // initialize firebase app
 initializeFirebase();

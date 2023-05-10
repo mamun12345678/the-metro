@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import Loading from "../../Loading";
-import { API_URL } from "../../../../config";
+import { API_URL } from "../../../config";
 
 const Events = () => {
   const [events, setEvents] = useState([]);
